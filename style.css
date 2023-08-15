@@ -1,0 +1,82 @@
+:root{
+    --red: #fc5185;
+    --gray: #364f6b;
+    --light-white: #f0f0f0;
+    --blue: #43dde6;
+    --secondaryblue:#5185fc;
+}
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--light-white);
+    font-family: 'Righteous', cursive;
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    color: var(--gray);
+    text-shadow: 4px 4px var(--red);
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 48px;
+}
+
+.container{
+    background: var(--red);
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);  
+}
+.box{
+    border: 2px solid var(--light-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: var(--secondaryblue);
+    cursor: pointer;
+}
+
+.gameInfo{
+    margin-top: 24px;
+}
+
+.restart {
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    background: var(--gray);
+    color: var(--light-white);
+    font-family: "Righteous", cursive;
+    letter-spacing: 2px;
+  }
+
+  .bt{
+    border-top: 0;
+  }
+  .bb{
+    border-bottom: 0;
+  }
+  .bl{
+    border-left: 0;
+  }
+  .br{
+    border-right: 0;
+  }

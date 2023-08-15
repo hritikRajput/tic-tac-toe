@@ -2,14 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
     <title>Tic Tac Toe</title>
 </head>
 
 <body>
-
+    <h1>Tic Tac Toe</h1>
+    <div class="gameContainer">
+        <div class="container">
+            <div class="box bt bl"><span class="boxtext"></span></div>
+            <div class="box bt"><span class="boxtext"></span></div>
+            <div class="box bt br"><span class="boxtext"></span></div>
+            <div class="box bl"><span class="boxtext"></span></div>
+            <div class="box"><span class="boxtext"></span></div>
+            <div class="box br"><span class="boxtext"></span></div>
+            <div class="box bb bl"><span class="boxtext"></span></div>
+            <div class="box bb"><span class="boxtext"></span></div>
+            <div class="box bb br"><span class="boxtext"></span></div>
+        </div>
+        <div class="gameInfo">
+            <div>
+                <button class="restart">Restart</button>
+            </div>
+        </div>
+    </div>
 
     <script src="index.js"></script>
 </body>
